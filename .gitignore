@@ -26,3 +26,12 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Bower specific
+
+bower_components
+
+#LabVIEW specific
+
+*.aliases
+*.lvlps

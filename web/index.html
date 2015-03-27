@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Web Component Series - Step 0 - Building Web Applications Using Web Components</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    
+    <link rel="import" href="bower_components/ajax-form/ajax-form.html">
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    
+    <script src="js/start.js"></script>
+    <link rel="stylesheet" href="css/start.css">
+
+</head>
+
+<body>
+
+    <section>
+        <form is="ajax-form" id="addform" method="post" enctype="multipart/form-data" action="add">
+            <paper-input name="first" label="First number" required floatinglabel></paper-input>
+            <paper-input name="second" label="Second number" required floatinglabel></paper-input>
+            <paper-button id="addsubmit" raised>Submit</paper-button>
+        </form>
+    </section>
+    
+    <section>
+        <paper-input id="addresult" label="Result" floatinglabel></paper-input>
+    </section>
+
+</body>
+</html>
