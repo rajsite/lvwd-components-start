@@ -33,7 +33,7 @@
         "uglifyjs": "uglifyjs",
         "vulcanize": "vulcanize",
         
-        "lint": "jslint web/js/*",
+        "lint": "jslint web/dev/js/*",
         "preserve:dev": "npm run lint",
         "serve:dev": "http-server web/dev/ -p 8888 -o",
         
