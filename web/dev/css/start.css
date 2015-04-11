@@ -1,0 +1,17 @@
+/* Make a stylish flat colored area to place our forms */
+section {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+/* 
+    If a paper-input is inside of a stylish box, make it fill the width of the box 
+
+    To learn more about awesome CSS selectors you can use, visit the Mozilla Developer Network (MDN):
+    https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors
+*/
+section paper-input {
+    width: 100%;
+}

@@ -1,0 +1,47 @@
+{
+    "name": "lvwd-components-start",
+    "version": "1.0.0",
+    "description": "Web Component Series - Step 0 - Building Web Applications Using Web Components",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rajsite/lvwd-components-start.git"
+    },
+    "keywords": [
+        "LabVIEW",
+        "WebComponents"
+    ],
+    "author": "Milan Raj (https://twitter.com/rajsite)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rajsite/lvwd-components-start/issues"
+    },
+    "homepage": "https://github.com/rajsite/lvwd-components-start",
+    "preferGlobal": true,
+    "devDependencies": {
+        "bower": "^1.3.12",
+        "http-server": "^0.8.0",
+        "jslint": "^0.9.0-pre006",
+        "uglify-js": "^2.4.17",
+        "vulcanize": "^0.7.10"
+    },
+    "scripts": {
+        "cmd": " ",
+        
+        "bower": "bower",
+        "http-server": "http-server",
+        "jslint": "jslint",
+        "uglifyjs": "uglifyjs",
+        "vulcanize": "vulcanize",
+        
+        "lint": "jslint web/js/*",
+        "preserve:dev": "npm run lint",
+        "serve:dev": "http-server web/dev/ -p 8888 -o",
+        
+        "prebuild": "npm run lint",
+        "build": "vulcanize web/dev/index.html -o web/index.html --csp --inline && uglifyjs web/index.js -o web/index.js --compress",
+        "preserve:build": "npm run build",
+        "serve:build": "http-server web/ -p 8888 -o",
+        
+        "test": "npm run lint"
+    }
+}
