@@ -30,9 +30,14 @@ node_modules
 # Bower specific
 bower_components
 
-#LabVIEW specific
+# LabVIEW project files to ignore
 *.aliases
 *.lvlps
 
 # Ignore throw away tests folder
 lv/Tests
+
+# Ignore Web Application build files
+web/*
+web/*/
+!web/dev/
