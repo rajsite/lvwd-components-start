@@ -33,3 +33,6 @@ bower_components
 #LabVIEW specific
 *.aliases
 *.lvlps
+
+# Ignore throw away tests folder
+lv/Tests
