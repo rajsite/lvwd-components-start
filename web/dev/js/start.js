@@ -2,7 +2,7 @@
 
 // Make sure the Web Components are loaded before trying to use them
 // We have to use a polymer specific function for now due to limitations of the polyfills
-window.addEventListener('polymer-ready', function () {
+window.addEventListener('WebComponentsReady', function () {
     'use strict';
     
     // Declare all variables at the start of the function
