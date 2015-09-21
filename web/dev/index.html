@@ -19,13 +19,13 @@
         Web Components used by the web app
 
         Visit the component pages for the web components used to see the documentation for their attributes, properties, methods, and events.
-        Some things to reference would be the "enctype" attribute of ajax-form or the "floatinglabel" attribute of paper-input.
-
-        http://ajax-form.raynicholus.com/components/ajax-form/
-        https://www.polymer-project.org/0.5/docs/elements/paper-input.html
-        https://www.polymer-project.org/0.5/docs/elements/paper-button.html
+        Some things to reference would be the "content-type" attribute of iron-form or the "floatinglabel" attribute of paper-input.
+        
+        https://elements.polymer-project.org/elements/iron-form
+        https://elements.polymer-project.org/elements/paper-button
+        https://elements.polymer-project.org/elements/paper-input
     -->
-    <link rel="import" href="bower_components/ajax-form/ajax-form.html">
+    <link rel="import" href="bower_components/iron-form/iron-form.html">
     <link rel="import" href="bower_components/paper-input/paper-input.html">
     <link rel="import" href="bower_components/paper-button/paper-button.html">
     
@@ -37,7 +37,7 @@
 <body>
     <!-- Main form where user enters data -->
     <section>
-        <form is="ajax-form" id="add-form" method="post" enctype="application/json" action="/lvwd-components-start/calc/add">
+        <form is="iron-form" id="add-form" method="post" content-type="application/json" action="/lvwd-components-start/calc/add">
             <paper-input name="first" label="First number" floatinglabel></paper-input>
             <paper-input name="second" label="Second number" floatinglabel></paper-input>
             <paper-button id="add-submit" raised>Submit</paper-button>

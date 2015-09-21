@@ -32,6 +32,7 @@
     "jslint": "jslint",
     "uglifyjs": "uglifyjs",
     "vulcanize": "vulcanize",
+    "clean": "git clean -x -f",
     "deps": "npm install && bower install",
     "lint": "jslint web/dev/js/*",
     "preserve:dev": "npm run lint",
